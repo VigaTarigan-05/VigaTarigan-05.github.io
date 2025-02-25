@@ -1,74 +1,47 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            width: 30%; /* Lebar kolom pertama */
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        ul li a {
-            color: purple;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>About Me</h1>
-    <p>Halaman ini berisi tentang saya</p>
-
-    <table>
-        <tr>
-            <th>Nama</th>
-            <td>Viga Liora Ateta Tarigan</td>
-        </tr>
-        <tr>
-            <th>NIM</th>
-            <td>220709068</td>
-        </tr>
-        <tr>
-            <th>Program Studi</th>
-            <td>Perpustakaan dan Sains Informasi</td>
-        </tr>
-        <tr>
-            <th>Fakultas</th>
-            <td>Ilmu Budaya</td>
-        </tr>
-        <tr>
-            <th>Universitas</th>
-            <td>Universitas Sumatera Utara</td>
-        </tr>
-    </table>
-
-    <h2>Halaman lain</h2>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="info-table">
+            <div class="info-row">
+                <div class="info-label">Name</div>
+                <div class="info-value">Wilda Syafitri</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">NIM</div>
+                <div class="info-value">220709058</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Major</div>
+                <div class="info-value">Library and Information Science</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Faculty</div>
+                <div class="info-value">Culture Science</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">University</div>
+                <div class="info-value">Universitas Sumatera Utara</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Country</div>
+                <div class="info-value">Indonesia</div>
+            </div>
+        </div>
+        <div class="new-tab">
+            <h2>New Tab</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
