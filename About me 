@@ -4,41 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .info-table {
+            margin-top: 20px;
+        }
+
+        .info-row {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .info-label {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px;
+            width: 150px;
+            box-sizing: border-box;
+        }
+
+        .info-value {
+            padding: 8px;
+            color: #555;
+        }
+
+        .new-tab {
+            margin-top: 20px;
+        }
+
+        .new-tab h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .new-tab ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .new-tab li {
+            margin-bottom: 5px;
+        }
+
+        .new-tab a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>About Me</h1>
         <div class="info-table">
             <div class="info-row">
-                <div class="info-label">Name</div>
-                <div class="info-value">Wilda Syafitri</div>
+                <div class="info-label">Nama</div>
+                <div class="info-value">Viga Liora Ateta Tarigan</div>
             </div>
             <div class="info-row">
                 <div class="info-label">NIM</div>
-                <div class="info-value">220709058</div>
+                <div class="info-value">220709068</div>
             </div>
             <div class="info-row">
-                <div class="info-label">Major</div>
-                <div class="info-value">Library and Information Science</div>
+                <div class="info-label">Fakultas</div>
+                <div class="info-value">Ilmu Budaya</div>
             </div>
             <div class="info-row">
-                <div class="info-label">Faculty</div>
-                <div class="info-value">Culture Science</div>
+                <div class="info-label">Program Studi</div>
+                <div class="info-value">Perpustakaan dan Sains Informasi</div>
             </div>
             <div class="info-row">
-                <div class="info-label">University</div>
+                <div class="info-label">Universitas</div>
                 <div class="info-value">Universitas Sumatera Utara</div>
             </div>
             <div class="info-row">
-                <div class="info-label">Country</div>
-                <div class="info-value">Indonesia</div>
-            </div>
-        </div>
         <div class="new-tab">
             <h2>New Tab</h2>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
