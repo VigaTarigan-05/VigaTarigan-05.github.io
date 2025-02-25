@@ -97,10 +97,14 @@
                 <div class="info-value">Perpustakaan dan Sains Informasi</div>
             </div>
             <div class="info-row">
-                <div class="info-label">Universitas</div>
+                <div class="info-label">Un</div>
                 <div class="info-value">Universitas Sumatera Utara</div>
             </div>
             <div class="info-row">
+                <div class="info-label">Country</div>
+                <div class="info-value">Indonesia</div>
+            </div>
+        </div>
         <div class="new-tab">
             <h2>New Tab</h2>
             <ul>
