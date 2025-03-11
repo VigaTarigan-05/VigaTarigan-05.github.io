@@ -8,14 +8,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
+            background-color: #e6f2f0; /* Warna abu-abu kehijauan dari gambar kedua */
+            color: #004d40; /* Warna teks sesuai gambar kedua */
             text-align: left;
             transition: background 0.3s, color 0.3s;
         }
         .dark-mode {
-            background-color: #dff6f0;
-            color: #003b30;
+            background-color: #121212;
+            color: white;
         }
         .container {
             margin-top: 20px;
@@ -36,24 +36,19 @@
         .nav {
             margin-top: 20px;
         }
-        h1 {
-            color: #006b5e;
-            font-size: 2em;
-        }
-        h2 {
-            color: #004d40;
-            font-weight: bold;
-        }
         .nav ul {
             list-style-type: disc;
             padding-left: 20px;
         }
         .nav a {
-            color: #6a0dad;
+            color: #800080; /* Warna link ungu sesuai gambar kedua */
             text-decoration: none;
         }
         .nav a:hover {
             text-decoration: underline;
+        }
+        h1, h2 {
+            color: #004d40; /* Warna teks utama sesuai gambar kedua */
         }
     </style>
 </head>
@@ -63,18 +58,20 @@
 
     <h1>Hello!</h1>
     <h2>Perkenalan</h2>
-    <p>Perkenalkan, nama saya Viga Liora Ateta Tarigan. Ini adalah <b><i>homepage</i></b>
+    <p style="color: #004d40;">Perkenalkan, nama saya Viga Liora Ateta Tarigan. Ini adalah <b><i>homepage</i></b>
         pertama saya, karena saya baru belajar tentang cara membuat <b><i>homepage.</i></b>
     </p>
 
-    <p><a href="https://library.usu.ac.id/" target="_blank">Perpustakaan USU</a></p>
+    <p><a href="https://library.usu.ac.id/" target="_blank" style="color: #800080;">Perpustakaan USU</a></p>
 
     <div class="nav">
-        <h3>New Tab</h3>
-        <ul>
-            <li><a href="About me.html" target="_blank">About me</a></li>
-            <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
-        </ul>
+        <div class="links">
+            <h3>New Tab</h3>
+            <ul>
+                <li><a href="About me.html" target="_blank">About me</a></li>
+                <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
 
     <script>
