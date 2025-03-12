@@ -8,18 +8,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e6f2f0; 
-            color: #004d40; 
+            background-color: #e6f2f0;
+            color: #004d40;
             text-align: left;
             transition: background 0.3s, color 0.3s;
         }
+
         .dark-mode {
             background-color: #121212;
             color: white;
         }
+
         .container {
             margin-top: 20px;
         }
+
         .toggle-btn {
             padding: 10px 20px;
             cursor: pointer;
@@ -30,49 +33,49 @@
             font-size: 16px;
             margin-bottom: 20px;
         }
+
         .toggle-btn:hover {
             background: #004d40;
         }
+
         .nav {
             margin-top: 20px;
         }
+
         .nav ul {
             list-style-type: disc;
             padding-left: 20px;
         }
+
         .nav a {
-            color: #800080; 
+            color: #800080;
             text-decoration: none;
         }
+
         .nav a:hover {
             text-decoration: underline;
         }
-        h1, h2 {
-            color: #004d40; 
+
+        h1,
+        h2 {
+            color: #004d40;
         }
     </style>
 </head>
+
 <body>
 
     <button class="toggle-btn" id="darkModeToggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
     <h1>Hello!</h1>
-     .fade-in {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        .fade-in.active {
-            opacity: 1;
-        }
     <h2>Perkenalan</h2>
-    <p style="color: #004d40;">Perkenalkan, nama saya Viga Liora Ateta Tarigan. Ini adalah <b><i>homepage</i></b>
+    <p style="color: #004d40;">Perkenalkan, nama saya Viga Liora Ateta Tarigan. Ini adalah
+        <b><i>homepage</i></b>
         pertama saya, karena saya baru belajar tentang cara membuat <b><i>homepage.</i></b>
     </p>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-<p id="demo"></p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+    <p id="demo"></p>
     <p><a href="https://library.usu.ac.id/" target="_blank" style="color: #800080;">Perpustakaan USU</a></p>
 
     <div class="nav">
@@ -83,28 +86,41 @@ Click me to display Date and Time.</button>
         </div>
     </div>
 
-<script>
-    function displayWIBTime() {
-        const now = new Date();
-        const wibTime = new Date(now.getTime() + (7 * 60 * 60 * 1000));
-        document.getElementById('demo').innerHTML = wibTime.toLocaleString();
-    }
+    <img id="runningDog" src="https://www.bing.com/images/search?q=gambar%20anjing%20animasi&FORM=IQFRBA&id=534B786B88D846241DB36BF2FF92976A8DC08FA2" alt="Anjing Berlari" style="
+        position: absolute;
+        bottom: 10px;
+        left: -200px; 
+        width: 100px;
+        transition: left 5s linear; 
+    ">
 
-    window.onload = function() {
-        const button = document.getElementById("darkModeToggle");
-        
-        if (localStorage.getItem("mode") === "dark") {
-            document.body.classList.add("dark-mode");
-            button.innerHTML = "☀️ Light Mode";
-        } else {
-            button.innerHTML = "🌙 Dark Mode";
+    <script>
+        function displayWIBTime() {
+            const now = new Date();
+            const wibTime = new Date(now.getTime() + (7 * 60 * 60 * 1000));
+            document.getElementById('demo').innerHTML = wibTime.toLocaleString();
         }
 
-    };
+        window.onload = function() {
+            const button = document.getElementById("darkModeToggle");
+
+            if (localStorage.getItem("mode") === "dark") {
+                document.body.classList.add("dark-mode");
+                button.innerHTML = "☀️ Light Mode";
+            } else {
+                button.innerHTML = "🌙 Dark Mode";
+            }
+
+            const dog = document.getElementById("runningDog");
+            setTimeout(() => {
+                dog.style.left = '100%'; 
+            }, 1000); 
+        };
+
         function toggleDarkMode() {
             const body = document.body;
             const button = document.getElementById("darkModeToggle");
-            
+
             body.classList.toggle("dark-mode");
 
             if (body.classList.contains("dark-mode")) {
@@ -115,19 +131,8 @@ Click me to display Date and Time.</button>
                 button.innerHTML = "🌙 Dark Mode";
             }
         }
-
-        window.onload = function() {
-            const button = document.getElementById("darkModeToggle");
-            
-            if (localStorage.getItem("mode") === "dark") {
-                document.body.classList.add("dark-mode");
-                button.innerHTML = "☀️ Light Mode";
-            } else {
-                button.innerHTML = "🌙 Dark Mode";
-            }
-        };
     </script>
 
 </body>
-</html>
 
+</html>
