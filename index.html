@@ -74,6 +74,25 @@ Click to display Date and Time.</button>
             <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
         </div>
     </div>
+<p id="welcomeText" style="opacity: 0; transition: opacity 1s;">Selamat datang di web saya!</p>
+
+<script>
+    window.onload = function() {
+        const button = document.getElementById("darkModeToggle");
+        
+        if (localStorage.getItem("mode") === "dark") {
+            document.body.classList.add("dark-mode");
+            button.innerHTML = "☀️ Light Mode";
+        } else {
+            button.innerHTML = "🌙 Dark Mode";
+        }
+
+        const welcomeText = document.getElementById("welcomeText");
+        setTimeout(() => {
+            welcomeText.style.opacity = 1;
+        }, 1000); 
+    };
+</script>
 
     <script>
         function toggleDarkMode() {
