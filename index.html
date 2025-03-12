@@ -62,7 +62,7 @@
         pertama saya, karena saya baru belajar tentang cara membuat <b><i>homepage.</i></b>
     </p>
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="displayWIBTime()">
 Click to display Date and Time.</button>
     <p id="demo"></p>
     <p><a href="https://library.usu.ac.id/" target="_blank" style="color: #800080;">Perpustakaan USU</a></p>
@@ -77,6 +77,13 @@ Click to display Date and Time.</button>
 <p id="welcomeText" style="opacity: 0; transition: opacity 1s;">Selamat datang di web saya!</p>
 
 <script>
+    function displayWIBTime() {
+        const now = new Date();
+        // Menambahkan perbedaan waktu 7 jam untuk mendapatkan WIB (UTC+7)
+        const wibTime = new Date(now.getTime() + (7 * 60 * 60 * 1000));
+        document.getElementById('demo').innerHTML = wibTime.toLocaleString();
+    }
+
     window.onload = function() {
         const button = document.getElementById("darkModeToggle");
         
@@ -89,7 +96,7 @@ Click to display Date and Time.</button>
 
         const welcomeText = document.getElementById("welcomeText");
         setTimeout(() => {
-            welcomeText.style.opacity = 1;
+            Selamat datang di Web saya!.style.opacity = 1;
         }, 1000); 
     };
         function toggleDarkMode() {
@@ -121,3 +128,4 @@ Click to display Date and Time.</button>
 
 </body>
 </html>
+
