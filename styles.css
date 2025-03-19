@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f2f1; /* Warna teal muda */
-    color: #004d40; /* Warna teal gelap */
+    background-color: #e0f2f1; 
+    color: #004d40; 
     margin: 0;
     padding: 20px;
     justify-content: center;
@@ -18,11 +18,11 @@ body {
 }
 
 h1 {
-    color: #00695c; /* Warna teal */
+    color: #00695c; 
 }
 
 h2 {
-    color: #00796b; /* Warna teal */
+    color: #00796b;
     margin-top: 20px;
 }
 
@@ -35,7 +35,7 @@ p {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #00897b; /* Warna teal */
+    background-color: #00897b; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -43,7 +43,7 @@ p {
 }
 
 .button:hover {
-    background-color: #00695c; /* Warna teal lebih gelap saat hover */
+    background-color: #00695c; 
 }
 
 ul {
@@ -58,11 +58,19 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #00897b; /* Warna teal */
+    color: #00897b;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 ul li a:hover {
-    color: #004d40; /* Warna teal lebih gelap saat hover */
+    color: #004d40; 
 }
+.footer {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+        }
