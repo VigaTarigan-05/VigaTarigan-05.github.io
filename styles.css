@@ -66,11 +66,4 @@ ul li a {
 ul li a:hover {
     color: #004d40; 
 }
-.footer {
-            background-color: #3b5998;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-            position: relative;
-        }
+
