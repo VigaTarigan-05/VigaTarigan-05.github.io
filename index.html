@@ -89,10 +89,9 @@
     <img id="Welcome" src="https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif" alt="Welcome" style="
         position: absolute;
         bottom: 10px; 
-        left: -200px; 
+        left: 0; 
         width: 300px; 
         height: auto; 
-        transition: left 5s linear; 
     ">
 
     <script>
@@ -111,11 +110,8 @@
             } else {
                 button.innerHTML = "🌙 Dark Mode";
             }
-
+            
             const dog = document.getElementById("Welcome");
-            setTimeout(() => {
-                dog.style.left = '100%'; 
-            }, 1000); 
         };
 
         function toggleDarkMode() {
