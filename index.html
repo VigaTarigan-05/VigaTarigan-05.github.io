@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #e6f2f0;
             color: #004d40;
-            text-align: left;
+            text-align: center;
             transition: background 0.3s, color 0.3s;
         }
 
@@ -20,7 +20,18 @@
         }
 
         .container {
-            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+            gap: 20px; /* Jarak antar kolom */
+            margin: 20px auto;
+            max-width: 80%; /* Membatasi lebar kontainer */
+        }
+
+        .column {
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .toggle-btn {
@@ -31,34 +42,33 @@
             border: none;
             border-radius: 5px;
             font-size: 16px;
-            margin-bottom: 20px.
         }
 
         .toggle-btn:hover {
-            background: #004d40.
-        }
-
-        .nav {
-            margin-top: 20px.
+            background: #004d40;
         }
 
         .nav ul {
-            list-style-type: disc.
-            padding-left: 20px.
+            list-style-type: none;
+            padding-left: 0;
         }
 
         .nav a {
-            color: #800080.
-            text-decoration: none.
+            color: #800080;
+            text-decoration: none;
         }
 
         .nav a:hover {
-            text-decoration: underline.
+            text-decoration: underline;
         }
 
         h1,
         h2 {
-            color: #004d40.
+            color: #004d40;
+        }
+
+        img {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -69,30 +79,39 @@
 
     <h1>Hello!</h1>
     <h2>Perkenalan</h2>
-    <p style="color: #004d40;">Perkenalkan, nama saya Viga Liora Ateta Tarigan. Ini adalah
-        <b><i>homepage</i></b>
-        pertama saya, karena saya baru belajar tentang cara membuat <b><i>homepage.</i></b>
-    </p>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-        Click me to display Date and Time.</button>
-    <p id="demo"></p>
-    <p><a href="https://library.usu.ac.id/" target="_blank" style="color: #800080;">Perpustakaan USU</a></p>
 
-    <div class="nav">
-        <div class="links">
+    <div class="container">
+     
+        <div class="column">
+            <p>Perkenalkan, nama saya Viga Liora Ateta Tarigan. Ini adalah 
+                <b><i>homepage</i></b> pertama saya, karena saya baru belajar tentang cara membuat 
+                <b><i>homepage.</i></b>
+            </p>
+        </div>
+
+        <div class="column">
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                Click me to display Date and Time.
+            </button>
+            <p id="demo"></p>
+        </div>
+
+        <div class="column nav">
+            <p><a href="https://library.usu.ac.id/" target="_blank">Perpustakaan USU</a></p>
+            
             <h3>New Tab</h3>
-            <li><a href="About me.html" target="_blank">About me</a></li>
-            <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
+            <ul>
+                <li><a href="About me.html" target="_blank">About me</a></li>
+                <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
+            </ul>
         </div>
     </div>
 
     <img id="Welcome" src="https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif" alt="Welcome" style="
-        position: absolute;
-        bottom: 10px; 
-        left: 0; 
         width: 300px; 
         height: auto; 
     ">
+
     <script>
         function displayWIBTime() {
             const now = new Date();
