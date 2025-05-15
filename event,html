@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Terbaru</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      color: #008080;
+      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 24px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 0 24px 40px 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(0, 128, 128, 0.10);
+      border: 2px solid #008080;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 18px 18px 18px;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0, 128, 128, 0.18);
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #008080;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .card-date {
+      font-size: 1rem;
+      color: #009999;
+      margin-bottom: 12px;
+    }
+    .card-desc {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .card-link {
+      background: #008080;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: auto;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .card-link:hover {
+      background: #005f5f;
+    }
+    @media (max-width: 900px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Event Terbaru</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-title">Workshop Desain Poster 2025</div>
+      <div class="card-date">22 Juni 2025</div>
+      <div class="card-desc">
+        Pelajari teknik desain poster modern bersama mentor profesional. Terbuka untuk umum!
+      </div>
+      <a class="card-link" href="#">Daftar Sekarang</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Lomba Video Edukasi</div>
+      <div class="card-date">1 Juli - 15 Agustus 2025</div>
+      <div class="card-desc">
+        Tunjukkan kreativitasmu dalam membuat video edukasi berdurasi maksimal 3 menit. Total hadiah 10 juta rupiah!
+      </div>
+      <a class="card-link" href="#">Info Lomba</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Seminar Literasi Digital</div>
+      <div class="card-date">10 September 2025</div>
+      <div class="card-desc">
+        Dapatkan wawasan tentang keamanan digital dan etika bermedia sosial di era AI.
+      </div>
+      <a class="card-link" href="#">Ikuti Seminar</a>
+    </div>
+  </div>
+</body>
+</html>
